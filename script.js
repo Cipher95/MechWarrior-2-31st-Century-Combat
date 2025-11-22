@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 details: "Official artwork depicting a climactic battle. MechWarriors engage in duels not just for survival, but to prove their skill, honor, and right to lead within the strict Clan caste system."
             },
             clans: [
-                { name: "Clan Wolf", imageUrl: "https://thumbnail.imgbin.com/5/11/7/imgbin-mechwarrior-online-mechwarrior-2-31st-century-combat-battletech-gray-wolf-mechwarrior-3050-clan-xZ2JPx4VC4U6TM5SjBHLwdaRg_t.jpg", details: "Descendants of the legendary Star League general Aleksandr Kerensky, Clan Wolf is one of the most powerful and respected Clans. They are known for their cunning, strategic prowess, and adherence to the Warden ideology, believing they are the true guardians of the Inner Sphere. Their signature 'Mechs are often fast and versatile." },
+                { name: "Clan Wolf", imageUrl: "https://a0.anyrgb.com/pngimg/496/1892/classic-battletech-mechwarrior-2-31st-century-combat-mechwarrior-3050-mechwarrior-online-battletech-mechwarrior-video-gaming-clan-coyote-clan-gray-wolf-thumbnail.png", details: "Descendants of the legendary Star League general Aleksandr Kerensky, Clan Wolf is one of the most powerful and respected Clans. They are known for their cunning, strategic prowess, and adherence to the Warden ideology, believing they are the true guardians of the Inner Sphere. Their signature 'Mechs are often fast and versatile." },
                 { name: "Clan Jade Falcon", imageUrl: "https://wiki.mechlivinglegends.net/images/thumb/c/c8/CJF.png/350px-CJF.png", details: "Arrogant, aggressive, and deeply devoted to the Crusader cause, Clan Jade Falcon believes it is their destiny to conquer the Inner Sphere and restore the Star League by force. They favor overwhelming firepower and jump-jet-equipped 'Mechs for aggressive, decisive strikes." }
             ],
             battlemechs: [
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 details: "クライマックスの戦闘を描いた公式アートワーク。メックウォリアーは生存のためだけでなく、厳格なクランのカースト制度の中で自らのスキル、名誉、そして指導権を証明するために決闘を行う。"
             },
             clans: [
-                { name: "ウルフ氏族", imageUrl: "https://thumbnail.imgbin.com/5/11/7/imgbin-mechwarrior-online-mechwarrior-2-31st-century-combat-battletech-gray-wolf-mechwarrior-3050-clan-xZ2JPx4VC4U6TM5SjBHLwdaRg_t.jpg", details: "伝説的な星間リーグの将軍アレクサンドル・ケレンスキーの子孫であるウルフ氏族は、最も強力で尊敬されるクランの一つです。彼らはその狡猾さ、戦略的な手腕、そしてインナースフィアの真の守護者であると信じるウォーデン思想への固執で知られています。彼らの代表的なメックは、しばしば高速で多用途です。" },
+                { name: "ウルフ氏族", imageUrl: "https://a0.anyrgb.com/pngimg/496/1892/classic-battletech-mechwarrior-2-31st-century-combat-mechwarrior-3050-mechwarrior-online-battletech-mechwarrior-video-gaming-clan-coyote-clan-gray-wolf-thumbnail.png", details: "伝説的な星間リーグの将軍アレクサンドル・ケレンスキーの子孫であるウルフ氏族は、最も強力で尊敬されるクランの一つです。彼らはその狡猾さ、戦略的な手腕、そしてインナースフィアの真の守護者であると信じるウォーデン思想への固執で知られています。彼らの代表的なメックは、しばしば高速で多用途です。" },
                 { name: "ジェイドファルコン氏族", imageUrl: "https://wiki.mechlivinglegends.net/images/thumb/c/c8/CJF.png/350px-CJF.png", details: "傲慢で攻撃的、そしてクルセイダーの大義に深く身を捧げるジェイドファルコン氏族は、インナースフィアを征服し、力によって星間リーグを再興することが自らの運命であると信じています。彼らは圧倒的な火力と、積極的で決定的な攻撃のためのジャンプジェット装備のメックを好みます。" }
             ],
             battlemechs: [
@@ -289,4 +289,5 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- INITIALIZATION ---
     updateLiveDateTime();
     setInterval(updateLiveDateTime, 1000);
+
 });
