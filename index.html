@@ -1,0 +1,146 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://pbs.twimg.com/media/GyzKzRcXoAAy8VH.jpg">
+    <title>MechWarrior 2: 31st Century Combat｜Activision</title>
+    <!-- Google Font Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="page-top">
+
+    <!-- Language Selection Screen -->
+    <div id="language-selector-screen">
+        <div class="language-selector-content">
+            <h1 id="language-prompt">Select Language Protocol / 言語プロトコルを選択</h1>
+            <div class="language-buttons">
+                <button class="lang-btn" data-lang="en">English</button>
+                <button class="lang-btn" data-lang="ja">日本語</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Intro Video Screen -->
+    <div id="intro-video-container">
+        <video id="intro-video" playsinline>
+            <source src="activision.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Main Content (Initially Hidden) -->
+    <div id="main-content" style="display: none;">
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="#page-top"><img src="https://cdn2.steamgriddb.com/logo/791608b685d1c61fb2fe8acdc69dc6b5.png" alt="MechWarrior 2 Logo" class="logo-img" id="header-logo-img"></a>
+                </div>
+                <div id="live-datetime-container"></div>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <div class="nav-wrapper" id="nav-wrapper">
+                    <ul>
+                        <li><a href="#story" data-key="nav_story">SITREP</a></li>
+                        <li><a href="#trailer" data-key="nav_trailer">INTRO</a></li>
+                        <li><a href="#clans" data-key="nav_clans">THE CLANS</a></li>
+                        <li><a href="#mechs" data-key="nav_mechs">BATTLEMECHS</a></li>
+                        <li><a href="#gallery" data-key="nav_gallery">ARCHIVES</a></li>
+                        <li><a href="#details" data-key="nav_details">SYSTEM SPECS</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <img src="https://cdn2.steamgriddb.com/logo/791608b685d1c61fb2fe8acdc69dc6b5.png" alt="MechWarrior 2: 31st Century Combat" class="hero-logo-img">
+                    <p class="release-date" data-key="release_date">"The Clans are coming. Do you have what it takes to be a warrior?"</p>
+                </div>
+            </section>
+
+            <section id="story" class="content-section hidden">
+                <h2 data-key="story_title">The Refusal War</h2>
+                <div class="story-content">
+                    <div class="story-text">
+                        <h3 data-key="story_subtitle1">A Generation of Peace is Shattered</h3>
+                        <p data-key="story_text1">The year is 3057. Following the epic Battle of Tukayyid, a fragile truce has halted the relentless advance of the Clans into the Inner Sphere. But this peace is not to last. On the distant Clan homeworlds, a conflict born of ideology and honor is about to erupt.</p>
+                    </div>
+                    <div class="story-text">
+                        <h3 data-key="story_subtitle2">Trial by Combat</h3>
+                        <p data-key="story_text2">The Crusader-minded Clan Jade Falcon, humiliated by the truce, issues a challenge to the treaty's architects, the Warden-minded Clan Wolf. What begins as a political dispute escalates into a full-blown war of annihilation—The Refusal War. As a MechWarrior, you must choose your side and pilot your BattleMech to victory, for the fate of your Clan hangs in the balance.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="trailer" class="content-section hidden">
+                <h2 data-key="trailer_title">Intro</h2>
+                <div class="video-container">
+                    <video id="announce-trailer" playsinline muted autoplay loop>
+                        <source id="trailer-source" src="intro.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </section>
+
+            <section id="clans" class="content-section hidden">
+                <h2 data-key="clans_title">The Warring Clans</h2>
+                <div class="grid-container" id="clans-grid-container"></div>
+            </section>
+            
+            <section id="mechs" class="content-section hidden">
+                <h2 data-key="mechs_title">Iconic BattleMechs</h2>
+                <div class="grid-container" id="mech-grid-container"></div>
+            </section>
+
+            <section id="gallery" class="content-section hidden">
+                <h2 data-key="gallery_title">Declassified Archives</h2>
+                <div id="gallery-clickable-container" class="art-container">
+                    <img id="gallery-img" src="" alt="MechWarrior 2 Gallery Art">
+                </div>
+            </section>
+
+            <section id="details" class="content-section hidden">
+                <h2 data-key="details_title">System Specifications</h2>
+                <div class="game-details">
+                    <ul id="game-details-list">
+                        <!-- Game details will be dynamically inserted here -->
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Activision.svg/2560px-Activision.svg.png" alt="Activision Logo">
+            </div>
+        </footer>
+    </div>
+
+    <audio id="bg-music" loop>
+        <source src="20 - Silver Staff.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Modal Structure -->
+    <div id="details-modal-overlay" class="modal-hidden">
+        <div id="details-modal-content">
+            <span id="modal-close-btn">&times;</span>
+            <img id="modal-image" src="" alt="Modal Image">
+            <h3 id="modal-title"></h3>
+            <p id="modal-details"></p>
+            <button id="modal-back-to-top" title="Back to top">&uarr;</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
